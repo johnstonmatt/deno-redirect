@@ -5,7 +5,7 @@ const PERMANENT_REDIRECT = 301;
 
 serve(
   (_: Request) =>
-    new Response("Hello World", {
+    new Response(null, {
       status: PERMANENT_REDIRECT,
       headers: { Location },
     })
